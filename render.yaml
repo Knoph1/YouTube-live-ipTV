@@ -1,0 +1,6 @@
+services:
+  - name: youtube-live-iptv
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn app:app
+    type: web
+    runtime: python
